@@ -121,7 +121,7 @@ function parseDate(dateStr: string): Date {
 }
 
 const server = new Server(
-  { name: 'unofficial-magister-mcp', version: pkg.version },
+  { name: 'magister-mcp', version: pkg.version },
   { capabilities: { tools: {} } }
 );
 

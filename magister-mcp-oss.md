@@ -174,15 +174,15 @@ magister-mcp/
     "anthropic",
     "model-context-protocol"
   ],
-  "author": "Israel Roldan",
+  "author": "NanoBotAgent",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/israelroldan/magister-mcp"
+    "url": "https://github.com/NanoBotAgent/magister-mcp"
   },
-  "homepage": "https://github.com/israelroldan/magister-mcp#readme",
+  "homepage": "https://github.com/NanoBotAgent/magister-mcp#readme",
   "bugs": {
-    "url": "https://github.com/israelroldan/magister-mcp/issues"
+    "url": "https://github.com/NanoBotAgent/magister-mcp/issues"
   },
   "engines": {
     "node": ">=20"
@@ -210,7 +210,7 @@ magister-mcp/
 
 ## Questions to Decide
 
-1. **Package name:** `magister-mcp` or `@israelroldan/magister-mcp`?
+1. **Package name:** `magister-mcp` or `@nanobotagent/magister-mcp`?
 2. **Scope:** Just schedule, or also homework/grades?
 3. **Multi-child support:** How to select which child?
 4. **Session caching:** Persist auth state between runs?
