@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**unofficial-magister-mcp** is an MCP (Model Context Protocol) server that provides access to Dutch school schedules from Magister.net. It uses Playwright for browser automation to authenticate and fetch schedule data via both API calls and DOM scraping as fallback.
+**magister-mcp** is an MCP (Model Context Protocol) server that provides access to Dutch school schedules from Magister.net. It uses rustwright for browser automation to authenticate and fetch schedule data via both API calls and DOM scraping as fallback.
 
 ## Commands
 
@@ -42,7 +42,7 @@ npm run type-check  # TypeScript type checking
 - **API fallback**: If API fails (status 5xx or auth issues), falls back to DOM scraping
 
 ### Key Implementation Details
-- Uses Playwright in headless mode
+- Uses rustwright in headless mode
 - Auth tokens captured from OAuth redirect URL or browser storage
 - Schedule API endpoint: `/api/personen/{userId}/afspraken?status=1&van={date}&tot={date}`
 - Cached data stored in `.schedule-cache.json`

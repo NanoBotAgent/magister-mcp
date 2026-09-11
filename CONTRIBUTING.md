@@ -1,4 +1,4 @@
-# Contributing to unofficial-magister-mcp
+# Contributing to magister-mcp
 
 Thank you for your interest in contributing! This document provides guidelines for contributing to this project.
 
@@ -6,8 +6,8 @@ Thank you for your interest in contributing! This document provides guidelines f
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/israelroldan/unofficial-magister-mcp.git
-   cd unofficial-magister-mcp
+   git clone https://github.com/NanoBotAgent/magister-mcp.git
+   cd magister-mcp
    ```
 
 2. **Install dependencies**

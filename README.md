@@ -1,4 +1,4 @@
-# unofficial-magister-mcp
+# magister-mcp
 
 An MCP (Model Context Protocol) server for accessing Dutch school schedules from [Magister](https://www.magister.net). Enables Claude and other MCP-compatible AI assistants to query school schedules, drop-off times, and pick-up times.
 
@@ -28,18 +28,18 @@ No more app switching. Just ask and plan.
 
 - Node.js 20 or later
 - A Magister account (student or parent)
-- ~150MB disk space (Playwright browsers)
+- ~150MB disk space (Chromium browser for rustwright)
 
 ## Installation
 
 ```bash
-npm install -g unofficial-magister-mcp
+npm install -g magister-mcp
 ```
 
 Or run directly with npx:
 
 ```bash
-npx unofficial-magister-mcp
+npx magister-mcp
 ```
 
 ## Configuration
@@ -61,7 +61,7 @@ Add to your Claude Code MCP configuration (`~/.claude/claude_code_config.json`):
   "mcpServers": {
     "magister": {
       "command": "npx",
-      "args": ["-y", "unofficial-magister-mcp"],
+      "args": ["-y", "magister-mcp"],
       "env": {
         "MAGISTER_SCHOOL": "schoolname.magister.net",
         "MAGISTER_USER": "your-username",
@@ -122,7 +122,7 @@ Last class on Mon Jan 06 2025: History ends at 15:45 @ Room 301
 
 ## How It Works
 
-1. **Authentication**: Uses Playwright to automate Magister login, capturing OAuth tokens
+1. **Authentication**: Uses rustwright to automate Magister login, capturing OAuth tokens
 2. **Session persistence**: Saves browser state to `.auth-state.json` to avoid re-login
 3. **API access**: Fetches schedules via Magister's internal API
 4. **Fallback**: If API fails, falls back to DOM scraping
@@ -155,8 +155,8 @@ The server caches schedules for 5 minutes. If you need fresh data, wait for the 
 
 ```bash
 # Clone the repository
-git clone https://github.com/israelroldan/unofficial-magister-mcp.git
-cd unofficial-magister-mcp
+git clone https://github.com/NanoBotAgent/magister-mcp.git
+cd magister-mcp
 
 # Install dependencies
 npm install
